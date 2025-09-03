@@ -1,7 +1,7 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/SPs4PNWX)
 # Lab 1 : CEG 3400 Intro to Cyber Security
 
-## Name:
+## Name: Alec Kelly
 
 ### Task 1: Hashing
 
@@ -37,15 +37,21 @@ Answer the following:
 hash)
 
 ```
-
+000000bb249892965a45c85847ddc1cdcf54e5b48f391ea27ea015d7017a3136 - 336249Wednesday
 ```
 
 * How many words were in your dictionary?
+  * Just one: Wednesday. I probably should have utilized a link in my code to find the golden nonce+word combination, but I instead focused on numerous iterations of one word.
 * How many nonces did your code iterate over?
+  * 400,000
 * What was the maximum number of hashes your code *could* compute given the above?
+  * Theoretically, my code could compute an infinite number of iterations, if I reframe the for loop to instead be a while loop while i > 0.
 * What did you think about Task 2?
+  * While I initially found the premise to be daunting, I soon found it to be simple but time consuming. My script is likely inefficient, which resulted in long wait times to find desired hashes.
 * Is there a better way than brute force to attempt to get higher valued coins?
+  * Yes 
 * Why or why not?
+  * I noticed certain words hash a bit faster, so being selective on words may improve efficiency. Also, after conducting some googling, [hardware acceleration](https://github.com/antonson-j1/SHA256-Accelerator-Hardware) can also help improve efficiency than the brute force utilized in my initial bash script.
 
 
 ```bash
